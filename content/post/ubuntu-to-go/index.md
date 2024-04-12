@@ -4,7 +4,7 @@ description: 即插即用的 Ubuntu，将 Ubuntu 安装在便携式储存设备�
 slug: ubuntu-to-go
 date: 2021-07-01
 # cover: https://pic.rmb.bdstatic.com/bjh/bc4a3e70e1a4b7ddb9ce5a14d757ee86.png
-image: cover.webp
+image: https://cfdn.nofated.win/blog/posts/ubuntu-to-go/cover.webp
 categories:
     - Technology
     - Linux
