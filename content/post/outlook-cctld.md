@@ -11,8 +11,6 @@ tags:
     - Email
 ---
 
-![111222](https://cfdn.nofated.win/blog/posts/outlook-cctld/cover.webp)
-
 Outlook 注册了众多国家和地区顶级域名来作为地区注册 Microsoft 账户的特色选择，我们可以通过调整浏览器显示语言来注册这些域名。
 
 |所属国家|邮箱后缀|申请地址|
