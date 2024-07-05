@@ -8,6 +8,10 @@ favicon = "https://cdn.nofated.win/mc"
 since = 2021
 customText = ""
 
+[footer.moeICP]
+enabled = true
+number = "20232345"
+
 [dateFormat]
 published = "Jan 02, 2006"
 lastUpdated = "Jan 02, 2006 15:04 MST"
