@@ -24,12 +24,18 @@
         </div>
         {{ partial "footer/include.html" . }}
     </body>
-    {{ $swJS := resources.Get "sw.js" | resources.ExecuteAsTemplate "sw.js" . | minify }}
+    {{ $version := now.Unix }}
+    {{ $swJS := resources.Get "sw.js" | resources.ExecuteAsTemplate "sw.js" . | minify | resources.Fingerprint "sha512" }}
+    <script nomodule>
+        if (navigator.userAgent.indexOf("MSIE") != -1 || navigator.userAgent.indexOf("Trident") != -1) {
+            document.querySelector("html").setAttribute("print-scheme", "enable");
+        }
+    </script>
     <script>
         window.addEventListener('load', () => {
-            const version = '{{ now.Unix }}';
+            const version = '{{ $version }}';
             if ('serviceWorker' in navigator && localStorage.getItem("sw.js-version") != version) {
-                navigator.serviceWorker.register('{{ $swJS.RelPermalink }}', {
+                navigator.serviceWorker.register(`{{ $swJS.RelPermalink }}`, {
                     scope: '/'
                 }).then(function (registration) {
                     console.log('ServiceWorker registration successful with scope: ', registration.scope);

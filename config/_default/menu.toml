@@ -15,10 +15,3 @@ url = "https://github.com/Nofated095"
 [social.params]
 icon = "brand-github"
 
-[[social]]
-identifier = "telegram"
-name = "Telegram"
-url = "https://t.me/s/Nofated"
-
-[social.params]
-icon = "brand-telegram"

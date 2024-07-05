@@ -17,8 +17,17 @@
                     
                     {{ if $avatar }}
                         {{ $avatarResized := $avatar.Resize "300x" }}
+
+                        {{- $webp := $avatarResized.Resize (printf "%dx%d webp photo" $avatarResized.Width $avatarResized.Height) }}
+
+                        <picture>
+                            <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+                            <source srcset="{{ $avatarResized.RelPermalink }}">
+
                         <img src="{{ $avatarResized.RelPermalink }}" width="{{ $avatarResized.Width }}"
                             height="{{ $avatarResized.Height }}" class="site-logo" loading="lazy" alt="Avatar">
+
+                        </picture>
                     {{ else }}
                         {{ errorf "Failed loading avatar from %q" . }}
                     {{ end }}
@@ -77,17 +86,19 @@
 
         <div class="menu-bottom-section">
             {{- $currentLanguageCode := .Language.Lang -}}
-            {{ with .Site.Home.AllTranslations }}
-                <li id="i18n-switch">  
-                    {{ partial "helper/icon" "language" }}
-                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
-                        {{ range . }}
-                            <option value="{{ .Permalink }}" {{ if eq .Language.Lang $currentLanguageCode }}selected{{ end }}>{{ .Language.LanguageName }}</option>
-                        {{ end }}
-                    </select>
-                </li>
+            {{ if ( compare.Gt .Site.Home.AllTranslations 1 ) }}
+                {{ with .Site.Home.AllTranslations }}
+                    <li id="i18n-switch">  
+                        {{ partial "helper/icon" "language" }}
+                        <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                            {{ range . }}
+                                <option value="{{ .Permalink }}" {{ if eq .Language.Lang $currentLanguageCode }}selected{{ end }}>{{ .Language.LanguageName }}</option>
+                            {{ end }}
+                        </select>
+                    </li>
+                {{ end }}
             {{ end }}
-            
+
             {{ if (default false .Site.Params.colorScheme.toggle) }}
                 <li id="dark-mode-toggle">
                     {{ partial "helper/icon" "toggle-left" }}

@@ -28,6 +28,7 @@ params:
             src: img/avatar.png
 
     article:
+        headingAnchor: false
         math: false
         toc: true
         readingTime: true
@@ -50,6 +51,12 @@ params:
             repo:
             issueTerm: pathname
             label:
+
+        beaudar:
+            repo:
+            issueTerm: pathname
+            label:
+            theme:        
 
         remark42:
             host:
