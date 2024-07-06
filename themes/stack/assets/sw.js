@@ -27,8 +27,8 @@ self.addEventListener("activate", (event) => {
 		caches.keys().then((keys) => {
 			return Promise.all(
 				keys.map((key) => {
-					if (key.includes("disqus-cdn-cache")) return caches.delete(key);
-					if (key.includes("disqus-img-cache")) return caches.delete(key);
+					if (key.includes("waline-cdn-cache")) return caches.delete(key);
+					if (key.includes("waline-img-cache")) return caches.delete(key);
 					if (
 						!key.includes(cacheSuffixVersion) &&
 						!key.includes("static-immutable")
@@ -67,7 +67,7 @@ routing.registerRoute(
 );
 
 routing.registerRoute(
-	/.*fonts\.googleapis\.com/,
+	/.*fonts\.googleapis\.cn/,
 	new CacheFirst({
 		cacheName: "static-immutable" + cacheSuffixVersion,
 		fetchOptions: {
@@ -84,7 +84,7 @@ routing.registerRoute(
 );
 
 routing.registerRoute(
-	/.*fonts\.gstatic\.com/,
+	/.*fonts\.gstatic\.cn/,
 	new CacheFirst({
 		cacheName: "static-immutable" + cacheSuffixVersion,
 		fetchOptions: {
@@ -113,10 +113,10 @@ routing.registerRoute(
 );
 
 routing.registerRoute(
-	new RegExp("disqus"),
+	new RegExp("waline"),
 	new NetworkFirst({
 		plugins: [
-			new backgroundSync.BackgroundSyncPlugin("disqus", {
+			new backgroundSync.BackgroundSyncPlugin("waline", {
 				maxRetentionTime: 12 * 60,
 			}),
 		],
