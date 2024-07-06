@@ -73,8 +73,11 @@ tags:
 一般来讲我会建议你先行到楼下进行实地考察。部分地区对于普卡是收取卡板费的。如果收取的话你可以参考下面申请各大高校联名卡。
 
 >**中国航空航天大学联名卡** [申请](https://ebiz.icbc.com.cn/icbc/ecams/debitcard/index/mail_debit_card_main.flowc?flowActionName=apply&i_apchannel=8&tranFlag=3&i_areaCode=0200&i_prodid=120010443780&i_allyno=02000092&i_employId=000892210) [微信公众号链接](https://mp.weixin.qq.com/s/vAdfyTgiOmUOFzTRB-yU3Q)
+>
 >**中国政法大学联名卡** [申请](https://ebiz.icbc.com.cn/icbc/ecams/debitcard/index/mail_debit_card_main.flowc?flowActionName=apply&i_apchannel=8&tranFlag=3&i_areaCode=0200&i_prodid=120010404280&i_allyno=02000091&i_employId=001028770)  [微信公众号链接](https://mp.weixin.qq.com/s/CXhN6KHvaHHkHgM8bek7kA)
+>
 >**北京邮电大学联名卡** [申请](https://ebiz.icbc.com.cn/icbc/ecams/debitcard/index/mail_debit_card_main.flowc?flowActionName=apply&i_apchannel=8&tranFlag=3&i_areaCode=0200&i_prodid=120010335780&i_allyno=02000084&i_employId=000915651)
+>
 >**华南师范大学联名卡** [微信公众号链接](https://mp.weixin.qq.com/s/qye_qcjkSQSBvISrhFUjKA)
 >
 >上面的三张大学联名卡均不需要卡板费即可办理，并且没有校友身份核验（即不需要真的是校友），有身份证就能办。其中北航、政法大学、北邮的卡均为中国工商银行**北京市分行**寄出，激活后**开户行为北京**的中国工商银行支行。
