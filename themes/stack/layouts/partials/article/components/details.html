@@ -1,13 +1,4 @@
 <div class="article-details">
-    {{ if .Params.categories }}
-    <header class="article-category">
-        {{ range (.GetTerms "categories") }}
-            <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
-                {{ .LinkTitle }}
-            </a>
-        {{ end }}
-    </header>
-    {{ end }}
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
@@ -34,6 +25,17 @@
                 <time class="article-time--published">
                     {{- .Date.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}
                 </time>
+            </div>
+        {{ end }}
+
+        {{ if .Params.categories }}
+            <div class="a1rticle-category">
+                {{ partial "helper/icon" "hash" }}
+                {{ range (.GetTerms "categories") }}
+                    <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
+                        {{ .LinkTitle }}
+                    </a>
+                {{ end }}
             </div>
         {{ end }}
 
