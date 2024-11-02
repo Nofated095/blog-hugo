@@ -1,1 +1,1 @@
-# Amane's Blog on Hugo
+# Amane's Blog
