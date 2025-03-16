@@ -5,7 +5,7 @@ slug: userbot
 date: 2023-01-20
 #cover: https://imgsrc.baidu.com/super/pic/item/c8177f3e6709c93db0cd8232da3df8dcd100543c.jpg
 #cover: https://xgjalbum.oss-cn-hangzhou.aliyuncs.com/43cb7c243eab49d55b481gb8/742E409E-A84C-11ED-AEC9-C03EBA168291.jpg?x-oss-process=image/format,webp
-image: https://cfdn.nofated.win/blog/posts/userbot/cover.webp
+image: https://cloudflare.endpoint.amaneus.net/blog/posts/userbot/cover.webp
 categories:
   - Technology
   - Telegram

@@ -4,7 +4,7 @@ description: 不知不觉，我成为了一个卡友。
 slug: my-cards
 date: 2023-07-12
 #cover: https://imgsrc.baidu.com/forum/pic/item/9922720e0cf3d7ca6f03e2b9b71fbe096a63a90c.jpg
-image: https://cfdn.nofated.win/blog/posts/my-cards/cover.webp
+image: https://cloudflare.endpoint.amaneus.net/blog/posts/my-cards/cover.webp
 categories:
     - Finance
     - Cards

@@ -4,7 +4,7 @@ description: 年满十六岁但是还不到十八岁的小萝莉想要开一张�
 slug: cards-for-teens
 date: 2023-11-26
 #cover: https://imgsrc.baidu.com/forum/pic/item/c2fdfc039245d68890f6c392e2c27d1ed21b240b.jpg
-image: https://cfdn.nofated.win/blog/posts/cards-for-teens/cover.webp
+image: https://cloudflare.endpoint.amaneus.net/blog/posts/cards-for-teens/cover.webp
 categories:
     - Finance
     - Cards

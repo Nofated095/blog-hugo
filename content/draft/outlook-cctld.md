@@ -4,7 +4,7 @@ description: 注册 outlook.jp outlook.sg outlook.de 等 Outlook 国家和地区
 slug: outlook-cctld
 date: 2021-08-28
 #cover: https://pic.rmb.bdstatic.com/bjh/da66dc778eb58ee35adc1de5c5bdd323.png
-image: https://cfdn.nofated.win/blog/posts/outlook-cctld/cover.webp
+image: https://cloudflare.endpoint.amaneus.net/blog/posts/outlook-cctld/cover.webp
 categories:
     - Technology
 tags:

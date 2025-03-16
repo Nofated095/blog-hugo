@@ -2,7 +2,7 @@
 mainSections = ["post"]
 # Output page's full content in RSS.
 rssFullContent = true
-favicon = "https://cdn.nofated.win/mc"
+favicon = "https://vercel.endpoint.amaneus.net/mc"
 
 [footer]
 since = 2021
@@ -23,7 +23,7 @@ subtitle = "什么啊这个反应。明明你可爱的妹妹都在用甜言蜜�
 [sidebar.avatar]
 enabled = true
 local = false
-src = "https://cfdn.nofated.win/avatars/avatar.webp"
+src = "https://cloudflare.endpoint.amaneus.net/avatars/avatar.webp"
 
 [article]
 math = false
@@ -108,7 +108,7 @@ clientSecret = ""
 autoCreateIssue = false
 
 [comments.waline]
-serverURL = "https://comment.9595095.xyz"
+serverURL = "https://waline.endpoint.amaneus.net/"
 lang = "zh-CN"
 visitor = ""
 avatar = "mp"
